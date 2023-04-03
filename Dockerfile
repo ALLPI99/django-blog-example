@@ -1,6 +1,6 @@
 # 사용할 베이스 이미지
 FROM python:3.9-slim-buster
-RUN yum install libmysqlclient-dev -y
+RUN apt-get install libmysqlclient-dev -y
 RUN pip install --upgrade pip
 RUN pip install mysqlclient
 
