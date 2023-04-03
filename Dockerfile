@@ -1,5 +1,5 @@
 # 사용할 베이스 이미지
-FROM python
+FROM python:3.9-slim-buster
 
 # 작업 디렉토리를 생성하고, 이동합니다.
 WORKDIR /app
