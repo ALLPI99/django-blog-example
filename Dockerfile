@@ -15,3 +15,5 @@ COPY . .
 
 # 컨테이너 실행 시 실행될 명령어를 설정합니다.
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+RUN git clone https://github.com/rgab1508/django-blog-example
