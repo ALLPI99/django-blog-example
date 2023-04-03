@@ -1,5 +1,5 @@
 # 사용할 베이스 이미지
-FROM python:3.8-slim-buster
+FROM python
 
 # 작업 디렉토리를 생성하고, 이동합니다.
 WORKDIR /app
@@ -16,4 +16,4 @@ COPY . .
 # 컨테이너 실행 시 실행될 명령어를 설정합니다.
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
-RUN git clone https://github.com/rgab1508/django-blog-example
+RUN git clone https://github.com/rgab1508/django-blog-example .
